@@ -57,6 +57,8 @@ The Sub Status indicates that the account was recognised but an incorrect passwo
 
 Wazuh generated a corresponding level 10 alert under custom rule `100120`, confirming that the repeated authentication failures matched the detection logic.
 
+The recorded Logon Type 2 indicates an interactive login attempt. The source network address `127.0.0.1` is a loopback address, consistent with the local authentication test performed on the Windows endpoint. These findings support the assessment that the observed activity originated from the controlled lab exercise rather than demonstrating a remote authentication attempt.
+
 A separate search for Event ID `4624` found no matching successful login for `SOC-Lab-Test` between 12:00 and 12:30 in either Windows Security logs or Wazuh alerts.
 
 ## 5. Assessment and Classification
@@ -86,7 +88,7 @@ In a production environment, similar activity would require verification of user
 
 ## 7. Supporting Evidence
 
-- /evidence/01_custom-rule-alert.png : Custom Wazuh detection alert.
-- /evidence/02_windows-failed-logins.png : Three Windows failed-login events.
-- /evidence/03_windows-agent-active.png : Connected Windows endpoint.
-- /evidence/04_rule-validation.png — Custom rule configuration and successful validation.
+- [Custom Wazuh detection alert](../evidence/01_custom-rule-alert.png)
+- [Windows failed-login events](../evidence/02_windows-failed-logins.png)
+- [Windows agent active](../evidence/03_windows-agent-active.png)
+- [Custom rule validation](../evidence/04_rule-validation.png)

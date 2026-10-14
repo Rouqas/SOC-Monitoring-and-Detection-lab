@@ -1,5 +1,5 @@
 <!-- SOC Lab: Repeated Windows failed logins -->
-<group name="windows, authentication_failed, lab_detection,">
+<group name="windows,authentication_failed,lab_detection,">
   <rule id="100120" level="10" frequency="3" timeframe="120">
     <if_matched_sid>60122</if_matched_sid>
     <same_field>win.eventdata.targetUserName</same_field>
