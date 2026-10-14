@@ -174,11 +174,11 @@ An important lesson was that a successfully triggered alert is not necessarily e
 
 ### Custom Wazuh Detection Alert
 
-![Wazuh level 10 alert](evidence/01_custom-rule-alert.png)
+-[Wazuh level 10 alert](evidence/01_custom-rule-alert.png)
 
 ### Windows Failed Login Events
 
-![Windows Event ID 4625 records](evidence/02_windows-failed-logins.png)
+-[Windows Event ID 4625 records](evidence/02_windows-failed-logins.png)
 
 ### Additional Verification
 
