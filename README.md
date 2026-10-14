@@ -171,16 +171,7 @@ I learned how to configure Windows event collection, investigate authentication 
 An important lesson was that a successfully triggered alert is not necessarily evidence of an attack. SOC analysts must examine supporting evidence, understand detection limitations and make proportionate response decisions.
 
 ## Evidence
-
-### Custom Wazuh Detection Alert
-
--[Wazuh level 10 alert](evidence/01_custom-rule-alert.png)
-
-### Windows Failed Login Events
-
--[Windows Event ID 4625 records](evidence/02_windows-failed-logins.png)
-
-### Additional Verification
-
+- [Wazuh level 10 alert](evidence/01_custom-rule-alert.png)
+- [Windows Event ID 4625 records](evidence/02_windows-failed-logins.png)
 - [Windows agent active](evidence/03_windows-agent-active.png)
 - [Custom rule validation](evidence/04_rule-validation.png)
